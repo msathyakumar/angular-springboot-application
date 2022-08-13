@@ -1,0 +1,4 @@
+FROM openjdk:8
+EXPOSE 8083
+ADD target/spring-crud-with-angular-angular-springboot-application.jar spring-crud-with-angular-angular-springboot-application.jar
+ENTRYPOINT ["java",".jar","/spring-crud-with-angular-angular-springboot-application.jar"]
